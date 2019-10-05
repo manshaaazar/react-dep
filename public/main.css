@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 8% auto;
+    grid-template-rows: 8% auto 8%;
+    grid-template-areas: "header header""aside main ""footer footer "
+}
+
+header {
+    background-color: #47b39d;
+    grid-area: header;
+}
+
+aside {
+    background-color: #C67486;
+}
+
+footer {
+    background-color: #eb6b56;
+    grid-area: footer;
+}
+
+main {
+    overflow-y: scroll;
+    margin: 2%;
+    padding: 2%;
+    grid-area: main;
+    width: 100%;
+}
+
+.x-view {
+    width: 99%;
+    height: 25%;
+    margin: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.batch {
+    height: 100%;
+    width: 15%;
+    margin: 0px 4px 0px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
